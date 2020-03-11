@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "bbgshop_nodemaster",
+    "script": "production.js",
+    "cwd": "/var/www/bbgshop_nodemaster",
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
