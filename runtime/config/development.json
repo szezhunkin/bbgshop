@@ -1,0 +1,370 @@
+{
+  "admin": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx97cbcebac0ec4ff8",
+      "secret": "6c06e00db4f3ad6ea8214fab3e57d91a",
+      "mch_id": "",
+      "partner_key": "",
+      "notify_url": ""
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "vaptcha": {
+      "vid": "5b91e6cafc650e21701ec0f5",
+      "key": "2383e7da4c2048b8a39fd652802a07b7"
+    },
+    "qiniu": {
+      "accessKey": "u7LNFHcD_1Ytud3CstNn_RkhiJXmv2-FS081bjbh",
+      "secretKey": "QwnnjPQaoa_JFKzyRTiBwalEe-x2S8G_U1mMc5k5",
+      "bucketName": "szelam"
+    },
+    "SMSClient": {
+      "accessKeyId": "accessKeyId",
+      "secretAccessKey": "secretAccessKey",
+      "SignatureName": "",
+      "TemplateDomesticCode": "",
+      "TemplateAbroadCode": ""
+    },
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "E:\\winec\\online-mall\\bbgshop_nodemaster\\runtime\\cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "bggshop",
+        "prefix": "bbgshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "password",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      }
+    }
+  },
+  "api": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx97cbcebac0ec4ff8",
+      "secret": "6c06e00db4f3ad6ea8214fab3e57d91a",
+      "mch_id": "",
+      "partner_key": "",
+      "notify_url": ""
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "vaptcha": {
+      "vid": "5b91e6cafc650e21701ec0f5",
+      "key": "2383e7da4c2048b8a39fd652802a07b7"
+    },
+    "qiniu": {
+      "accessKey": "u7LNFHcD_1Ytud3CstNn_RkhiJXmv2-FS081bjbh",
+      "secretKey": "QwnnjPQaoa_JFKzyRTiBwalEe-x2S8G_U1mMc5k5",
+      "bucketName": "szelam"
+    },
+    "SMSClient": {
+      "accessKeyId": "accessKeyId",
+      "secretAccessKey": "secretAccessKey",
+      "SignatureName": "",
+      "TemplateDomesticCode": "",
+      "TemplateAbroadCode": ""
+    },
+    "publicController": [
+      "index",
+      "catalog",
+      "topic",
+      "auth",
+      "goods",
+      "brand",
+      "search",
+      "region",
+      "feedback",
+      "bargain",
+      "luckdraw"
+    ],
+    "publicAction": [
+      "comment/list",
+      "comment/count",
+      "cart/index",
+      "cart/add",
+      "cart/checked",
+      "cart/update",
+      "cart/delete",
+      "cart/goodscount",
+      "pay/notify",
+      "luckdraw/findinfo",
+      "feedback/exchange",
+      "bargain/bargainlist",
+      "luckdraw/findjoinpeople"
+    ],
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "E:\\winec\\online-mall\\bbgshop_nodemaster\\runtime\\cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "bggshop",
+        "prefix": "bbgshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "password",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      }
+    }
+  },
+  "common": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx97cbcebac0ec4ff8",
+      "secret": "6c06e00db4f3ad6ea8214fab3e57d91a",
+      "mch_id": "",
+      "partner_key": "",
+      "notify_url": ""
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "vaptcha": {
+      "vid": "5b91e6cafc650e21701ec0f5",
+      "key": "2383e7da4c2048b8a39fd652802a07b7"
+    },
+    "qiniu": {
+      "accessKey": "u7LNFHcD_1Ytud3CstNn_RkhiJXmv2-FS081bjbh",
+      "secretKey": "QwnnjPQaoa_JFKzyRTiBwalEe-x2S8G_U1mMc5k5",
+      "bucketName": "szelam"
+    },
+    "SMSClient": {
+      "accessKeyId": "accessKeyId",
+      "secretAccessKey": "secretAccessKey",
+      "SignatureName": "",
+      "TemplateDomesticCode": "",
+      "TemplateAbroadCode": ""
+    },
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "E:\\winec\\online-mall\\bbgshop_nodemaster\\runtime\\cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "bggshop",
+        "prefix": "bbgshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "password",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      }
+    }
+  },
+  "weixinpay": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx97cbcebac0ec4ff8",
+      "secret": "6c06e00db4f3ad6ea8214fab3e57d91a",
+      "mch_id": "",
+      "partner_key": "",
+      "notify_url": ""
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "vaptcha": {
+      "vid": "5b91e6cafc650e21701ec0f5",
+      "key": "2383e7da4c2048b8a39fd652802a07b7"
+    },
+    "qiniu": {
+      "accessKey": "u7LNFHcD_1Ytud3CstNn_RkhiJXmv2-FS081bjbh",
+      "secretKey": "QwnnjPQaoa_JFKzyRTiBwalEe-x2S8G_U1mMc5k5",
+      "bucketName": "szelam"
+    },
+    "SMSClient": {
+      "accessKeyId": "accessKeyId",
+      "secretAccessKey": "secretAccessKey",
+      "SignatureName": "",
+      "TemplateDomesticCode": "",
+      "TemplateAbroadCode": ""
+    },
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "E:\\winec\\online-mall\\bbgshop_nodemaster\\runtime\\cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "bggshop",
+        "prefix": "bbgshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "password",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "E:\\winec\\online-mall\\bbgshop_nodemaster\\logs\\app.log"
+      }
+    }
+  }
+}
